@@ -7,7 +7,7 @@ function Button({ label, variant = "secondary" }) {
 
     // Variant-specific colours — each class maps to a component token in index.css
     const variants = {
-        secondary: "bg-btn-secondary text-text-primary hover:bg-btn-secondary-hover",
+        secondary: "bg-btn-secondary text-white hover:bg-btn-secondary-hover",
         primary:   "bg-btn-primary text-white hover:bg-btn-primary-hover",
     };
 

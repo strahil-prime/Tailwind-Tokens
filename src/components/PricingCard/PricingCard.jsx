@@ -1,13 +1,13 @@
 // PricingCard.jsx — Reusable pricing card component.
-// Props: title, priceAmount, pricePeriod, includesText, features[], buttonText, buttonVariant
+// Props: title, titleClassName, priceAmount, pricePeriod, includesText, features[], buttonText, buttonVariant
 
 import Button from '../Button/Button';
 
-function PricingCard({ title, priceAmount, pricePeriod, includesText, features, buttonText, buttonVariant }) {
+function PricingCard({ title, priceAmount, pricePeriod, includesText, features, buttonText, buttonVariant, titleClassName = "text-text-primary" }) {
     return (
         <div className="flex flex-col min-h-[380px] bg-card rounded p-4 w-80 shrink-0">
             <div className="flex flex-col">
-                <h3 className="text-[22px] leading-7 font-normal text-text-primary mb-2">
+                <h3 className={`text-[22px] leading-7 font-normal mb-2 ${titleClassName}`}>
                     {title}
                 </h3>
 

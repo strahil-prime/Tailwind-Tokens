@@ -5,6 +5,7 @@ import PricingCard from '../components/PricingCard/PricingCard';
 function Pricing() {
     const hobbyPlan = {
         title: 'Hobby',
+        titleClassName: 'text-green',
         priceAmount: 'Free',
         pricePeriod: null,
         includesText: 'Includes:',
